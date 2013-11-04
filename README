@@ -1,0 +1,19 @@
+Duppy is a command line tool to recurse multiple directories and find duplicate files. It then provides an interactive menu to act on these duplicates.
+
+python dup.py dir1 dir2 ...
+
+Available commands in interactive menu:-
+- list - list all directories with duplicate files, numbered
+- #num - list all duplicate files in selected directory numbered in original list command
+
+- open #num1 #num2 ... - open directories in GUI window
+- move #num1 #num2 ... - move duplicates to dup_backup directory in CWD
+- dups #num1 #num2 ... - show all duplicates in specified directories
+- nondups #num1 #num2 ... - show all non-duplicates in specified directories
+
+- filter - list all active filters
+- filter <string> - filter all directories containing <string> from list command
+
+- quit - exit program
+- reload - rescan directories
+- clear - clear the screen
